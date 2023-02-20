@@ -83,7 +83,7 @@ def getEachPageMessage(search_info, headers, page, stars):
 
 def getSolidityRelatedRepositories():
     search_info = 'language:solidity'
-    headers = getHeaders('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')
+    headers = getHeaders('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') # token记得换自己的
     stars = 22700  # 此处应为Integer.Max_Value，取一个极大的值作为筛选标准
     total_counts = getTotalCountsByStars(search_info,headers,stars)
     count = 1
