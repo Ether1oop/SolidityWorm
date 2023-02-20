@@ -97,7 +97,7 @@ def getSolidityRelatedRepositories():
             print("pages:"+str(i))
             for item in results['items']:
                 stars_list.append(item['stargazers_count'])
-                writeFile("Repositories/"+str(count)+".txt",json.dumps(item))
+                writeFile("Repositories/"+str(count)+".json",json.dumps(item))
                 count += 1
                 print(item['full_name'])
         stars = stars_list[-1]
